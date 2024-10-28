@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetVistaFiber - Fiber Plans</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -141,8 +140,6 @@
             display: flex;
             justify-content: space-around;
             margin: 4rem 0;
-            flex-wrap: wrap;
-            gap: 2rem;
         }
 
         .feature-card {
@@ -151,7 +148,6 @@
             border-radius: 10px;
             max-width: 300px;
             text-align: center;
-            flex: 1;
         }
 
         .feature-icon {
@@ -181,42 +177,21 @@
             margin-bottom: 1rem;
         }
 
-        /* Responsive Styling */
+        /* Responsive Styles */
         @media (max-width: 768px) {
-            .nav-links {
+            .nav {
                 flex-direction: column;
                 gap: 1rem;
             }
-
+            .page-container {
+                padding: 1rem;
+            }
             .title {
                 font-size: 2.5rem;
             }
-
-            .subtitle {
-                font-size: 1.2rem;
+            .plans-container {
+                gap: 1rem;
             }
-
-            .plan-card {
-                padding: 1.5rem;
-            }
-
-            .plan-name, .plan-price {
-                font-size: 1.5rem;
-            }
-
-            .plan-speed {
-                font-size: 1.2rem;
-            }
-
-            .cta-button {
-                padding: 0.8rem 1.5rem;
-                font-size: 1rem;
-            }
-
-            .feature-card {
-                max-width: 90%;
-            }
-
             .cta-section h2 {
                 font-size: 2.5rem;
             }
@@ -226,20 +201,16 @@
             .title {
                 font-size: 2rem;
             }
-
             .subtitle {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
-
-            .plan-header, .plan-speed {
-                font-size: 1rem;
+            .plan-header {
+                flex-direction: column;
+                gap: 0.5rem;
             }
-
-            .cta-button {
-                padding: 0.7rem 1.2rem;
-                font-size: 0.9rem;
+            .feature-card {
+                max-width: 100%;
             }
-
             .cta-section h2 {
                 font-size: 2rem;
             }
@@ -251,7 +222,7 @@
     <nav class="nav">
         <div class="logo">NetVistaFiber</div>
         <div class="nav-links">
-            <a href="#home">Home</a>
+            <a href="https://nicolemiller2005.github.io/nicolemiller2005-NetVistaFiber.github.io/" target="_blank">Home</a>
             <a href="#fiber-plans">Fiber Plans</a>
             <a href="#mobile-plans">Mobile Plans</a>
             <a href="#support">Support</a>
@@ -337,4 +308,3 @@
     </div>
 </body>
 </html>
-
